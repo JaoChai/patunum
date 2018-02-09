@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+//Manage Admin Backend 
+
+Route::get('setting', function(){
+	return view('admin.setting.index');
+});
