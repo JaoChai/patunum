@@ -8,19 +8,19 @@
                                 </div>
                             </li>
                             <li class="heading">
-                                <h3 class="uppercase">จัดการเว็บไซต์</h3>
+                                <h3 class="uppercase">Manage Website</h3>
                             </li>
                             <li class="nav-item start ">
                                 <a href="javascript:;" class="nav-link nav-toggle">
                                     <i class="icon-home"></i>
-                                    <span class="title">ช้อมูลเว็บไซต์</span>
+                                    <span class="title">Website</span>
                                     <span class="arrow"></span>
                                 </a>
                                 <ul class="sub-menu">
                                     <li class="nav-item start ">
-                                        <a href="index.html" class="nav-link ">
+                                        <a href="setting" class="nav-link ">
                                             <i class="icon-bar-chart"></i>
-                                            <span class="title">ตั้งค่าเว็บไซต์</span>
+                                            <span class="title">Setting Web</span>
                                         </a>
                                     </li>
                                 </ul>

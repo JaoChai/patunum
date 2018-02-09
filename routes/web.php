@@ -21,3 +21,4 @@ Route::get('/', function () {
 Route::get('setting', function(){
 	return view('admin.setting.index');
 });
+
