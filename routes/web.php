@@ -16,9 +16,16 @@ Route::get('/', function () {
 });
 
 
-//Manage Admin Backend 
+//Manage Admin Backend
 
-Route::get('setting', function(){
+/*Route::get('setting', function(){
 	return view('admin.setting.index');
-});
+});*/
 
+Auth::routes();
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
+
+  Route::get('/setting', 'SettingController@index')->name('set.index');
+  Route::post('/setting/update', 'SettingController@update')->name('set.update');
+
+});
