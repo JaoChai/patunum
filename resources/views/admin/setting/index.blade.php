@@ -15,12 +15,12 @@
 
                                         <h3 class="form-section">Setting WebSite</h3>
 
-                                        <div class="form-group last">
-                                                        <label class="control-label col-md-3">Logo</label>
-                                                        <div class="col-md-9">
-                                                            <div class="fileinput fileinput-new" data-provides="fileinput">
-                                                                <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
-                                                                    <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" /> </div>
+                                        <div class="form-group">
+                                             <label class="control-label col-md-3">Logo</label>
+                                                    <div class="col-md-9">
+                                                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                            <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+                                                            <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" /> </div>
                                                                 <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"> </div>
                                                                 <div>
                                                                     <span class="btn default btn-file">
@@ -31,13 +31,13 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                    </div>  
 
 
                                              <div class="form-group">
                                                 <label class="col-md-3 control-label" for="title">Site Title :</label>
                                                     <div class="col-md-7">
-                                                 <button id="" type="text" name="sitetitle" class="form-control" value=""></div>
+                                                 <input id="" type="text" name="sitetitle" class="form-control" value=""></div>
                                              </div>
                                                 
                                              <div class="form-group">
@@ -50,7 +50,7 @@
                                              <div class="form-group">
                                                 <label class="col-md-3 control-label" for="title">Meta Keyword :</label>
                                                     <div class="col-md-7">
-                                                <button id="" type="text" name="meta_key" class="form-control" value=""></div>
+                                                <input id="" type="text" name="meta_key" class="form-control" value=""></div>
                                             </div>
 
                                             <div class="form-group">
@@ -72,13 +72,13 @@
                                             <div class="form-group">
                                                 <label class="col-md-3 control-label" for="title">Phone :</label>
                                                     <div class="col-md-7">
-                                                <button id="" type="text" name="phone" class="form-control" value=""></div>
+                                                <input id="" type="text" name="phone" class="form-control" value=""></div>
                                             </div>
 
                                             <div class="form-group">
                                                 <label class="col-md-3 control-label" for="title">Email :</label>
                                                     <div class="col-md-7">
-                                                <button id="" type="text" name="email" class="form-control" value=""></div>
+                                                <input id="" type="text" name="email" class="form-control" value=""></div>
                                             </div>
 
      
@@ -88,25 +88,25 @@
                                             <div class="form-group">
                                                 <label class="col-md-3 control-label" for="title">Facebook :</label>
                                                     <div class="col-md-7">
-                                                <button id="" type="text" name="facebook" class="form-control" value=""></div>
+                                                <input id="" type="text" name="facebook" class="form-control" value=""></div>
                                             </div>
 
                                             <div class="form-group">
                                                 <label class="col-md-3 control-label" for="title">Twitter :</label>
                                                     <div class="col-md-7">
-                                                <button id="" type="text" name="twitter" class="form-control" value=""></div>
+                                                <input id="" type="text" name="twitter" class="form-control" value=""></div>
                                             </div>
 
                                             <div class="form-group">
                                                 <label class="col-md-3 control-label" for="title">Google+ :</label>
                                                     <div class="col-md-7">
-                                                <button id="" type="text" name="google" class="form-control" value=""></div>
+                                                <input id="" type="text" name="google" class="form-control" value=""></div>
                                             </div>
 
                                             <div class="form-group">
                                                 <label class="col-md-3 control-label" for="title">Line :</label>
                                                     <div class="col-md-7">
-                                                <button id="" type="text" name="line" class="form-control" value=""></div>
+                                                <input id="" type="text" name="line" class="form-control" value=""></div>
                                             </div>
                                            
                                                     <div class="form-group margin-top-30">
@@ -117,7 +117,7 @@
                                                     </div>
 
                                                 </form>
-                                                
+
                                             </div>
                                         </div>
                                         <!-- END PORTLET-->
