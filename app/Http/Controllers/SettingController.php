@@ -75,10 +75,9 @@ class SettingController extends Controller
     {
         //
 
-        //dd(request()->all());
+        //dd($setting->id);
 
         $this->validate($request,[
-          'logo' => 'required|image',
           'sitetitle' => 'required',
           'meta_des' => 'required',
           'meta_key' => 'required',
@@ -94,16 +93,25 @@ class SettingController extends Controller
 
         ]);
 
-        $logo = $request->logo;
+        if($request->hasFile('logo')){
 
-        $logo_new_name = time().$logo->getClientOriginalName();
+          $this->validate($request,[
+            'logo' => 'required|image'
+          ]);
 
-        $logo->move('uploads/setting', $logo_new_name);
+            $logo = $request->logo;
+            $logo_new_name = time().$logo->getClientOriginalName();
+            $logo->move('uploads/setting', $logo_new_name);
+
+            Setting::where('id', $setting->id)
+                      ->update([
+                        'logo' => 'uploads/setting/'.$logo_new_name,
+                      ]);
+        }
+
 
         Setting::where('id', $setting->id)
                   ->update([
-
-                    'logo' => 'uploads/setting'. $logo_new_name,
                     'sitetitle' => $request->input('sitetitle'),
                     'meta_des' => $request->input('meta_des'),
                     'meta_key' => $request->input('meta_key'),
@@ -115,7 +123,6 @@ class SettingController extends Controller
                     'twitter' => $request->input('twitter'),
                     'google' => $request->input('google'),
                     'line' => $request->input('line')
-
                   ]);
 
                   Session::flash('success', 'Setting updated successfully');

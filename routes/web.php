@@ -26,6 +26,6 @@ Auth::routes();
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
 
   Route::get('/setting', 'SettingController@index')->name('set.index');
-  Route::post('/setting/update', 'SettingController@update')->name('set.update');
+  Route::post('/setting/update/{setting}', 'SettingController@update')->name('set.update');
 
 });
